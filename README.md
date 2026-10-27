@@ -11,3 +11,6 @@ Vytvoření programu pro generování bezpečných a silných hesel, která neby
 ### 13. 10. 2026
 - Nahrání souboru `main.py`.
 - Vytvoření README.md pro dokumentaci projektu a evidenci pokroku
+
+### 27. 10. 2026
+- Přidání pozastavení programu před ukončením
