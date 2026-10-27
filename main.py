@@ -70,3 +70,5 @@ print(heslo)
 
 H = vypocitej_entropii(delka, znaky)
 print(f"Entropie hesla: {H:.4f} bitu")
+
+input("\nStisknete Enter pro ukonceni...")
