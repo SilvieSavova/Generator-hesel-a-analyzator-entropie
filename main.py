@@ -49,6 +49,18 @@ def ziskej_delku():
         except ValueError:
             print("Zadejte prosim cele cislo!")
 
+def ziskej_pocet_hesel():
+    while True:
+        try:
+            pocet = int(input("Pocet vygenerovanych hesel (max 100): "))
+
+            if pocet < 1 or pocet > 100:
+                print("Zadejte cislo v rozsahu 1-100!")
+            else:
+                return pocet
+        except ValueError:
+            print("Zadejte prosim cele cislo!")
+
 def vygeneruj_heslo(delka, znaky):
     heslo = ""
 
@@ -64,17 +76,21 @@ def vypocitej_entropii(delka, znaky):
 
 znaky = vyber_znaky()
 delka = ziskej_delku()
+pocet = ziskej_pocet_hesel()
 
 i = 1
 
 while True:
-    heslo = vygeneruj_heslo(delka, znaky)
-    print(f"{i}. {heslo}")
-
     H = vypocitej_entropii(delka, znaky)
-    print(f"Entropie hesla: {H: .4f} bitu")
 
-    pokracovat = input("\nChcete vygenerovat dalsi heslo? (a/n)\n" \
+    for j in range(pocet):
+        heslo = vygeneruj_heslo(delka, znaky)
+        print(f"{i}. {heslo}")
+        i += 1
+
+    print(f"Entropie kazdeho hesla: {H:.4f} bitu")
+
+    pokracovat = input("\nChcete vygenerovat dalsi hesla? (a/n)\n" \
                        "a - Se stejnymi parametry\n" \
                        "b - S novymi parametry\n" \
                        "n - Ukoncit program\n" \
@@ -90,5 +106,4 @@ while True:
     elif pokracovat == "b":
         znaky = vyber_znaky()
         delka = ziskej_delku()
-
-    i += 1
+        pocet = ziskej_pocet_hesel()
