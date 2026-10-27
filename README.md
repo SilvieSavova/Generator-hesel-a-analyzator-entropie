@@ -13,4 +13,6 @@ Vytvoření programu pro generování bezpečných a silných hesel, která neby
 - Vytvoření README.md pro dokumentaci projektu a evidenci pokroku
 
 ### 27. 10. 2026
-- Přidání pozastavení programu před ukončením
+- Rozšíření možností generování hesel o opakované generování a změnu parametrů
+- Přidání pořadového číslování vygenerovaných hesel
+- Úprava ovlásání programu pro možnost pokračování v generování nebo ukončení aplikace
