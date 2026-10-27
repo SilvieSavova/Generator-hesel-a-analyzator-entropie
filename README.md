@@ -15,4 +15,5 @@ Vytvoření programu pro generování bezpečných a silných hesel, která neby
 ### 27. 10. 2026
 - Rozšíření možností generování hesel o opakované generování a změnu parametrů
 - Přidání pořadového číslování vygenerovaných hesel
+- Přidání hromadného generování hesel
 - Úprava ovládání programu pro možnost pokračování v generování nebo ukončení aplikace
